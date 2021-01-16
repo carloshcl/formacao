@@ -24,15 +24,15 @@ Projeto contruído com Eclipse IDE for Enterprise Java Developers. Versão 2020-
 1. Deve selecionar o nome do projeto, clicar o o botão direito do mouse, selecionar "Export" > WAR file.
 2. Escolher o 'Target Runtime' para Apache Tomcat v8.0.
 
-# Deploy (Publicação)
+## Deploy (Publicação)
 
 Publicar o arquivo WAR gerado em Servidores Apache Tomcat v7.0 ou superior
 
-# Features
+## Features
 
-# Configuração
+## Configuração
 
-# Links
+## Links
 
 # Licença
 

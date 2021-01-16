@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 111</title>
     <!-- Links -->
-    <link rel="stylesheet" href="./recursos/css/form.css">
+    <link rel="stylesheet" href="../recursos/css/form.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -26,7 +26,7 @@
                     <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
                     <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
                     </li>
-                    <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
+                    <li><a href="#"> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
                     <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
                     <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
                     <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
@@ -39,7 +39,7 @@
             <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
             <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
             </li>
-            <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas </a></li>
+            <li><a href="#"> <i class="fas fa-search-dollar"></i> Ver Vagas </a></li>
             <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos </a></li>
             <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar </a></li>
             <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar </a></li>
@@ -50,37 +50,55 @@
     <section>
         <div id="desc">
             <h1 class="center-align"> Nome do Site </h1>
-            <p class="flow-text center-align"> Vem fazer parte desse movimento! </p>
+            <p class="flow-text center-align"> Esse é o primeiro passo para novas oportunidades! 
+             Comece preenchendo o formulário aqui em abaixo para te conhecermos melhor
+            </p>
         </div>
         <!-- formulario -->
         <form>
-            <p>Razão Social: <input type="text" name="RazaoSocial" class="input"></p>
-            <p>Nome Fantasia: <input type="text" name="NomeFantasia" class="input"></p>
-            <p>CNPJ: <input type="text" name="CNPJ" class="input"></p>
-            <p>Endereço: <input type="text" name="Endereço"></p>
-            <p>Email da Empresa: <input type="text" name="EmailEmpresa" class="input"></p>
-            <p>Senha: <input type="password" name="password" class="input"></p>
-            <p>Telefone/Celular: <input type="text" name="TelCel" class="input"></p>
-            <p>Site: <input type="text" name="Site"></p>
-            <p>Número de Funcionarios: <input type="text" name="NumFunc" class="input"></p>
-            <p>Área de atuação: <input type="text" name="AreaAtua" id="" class="input" placeholder="ex: Industria, Varejo, Saúde, Educação, Etc."></p>
-            <p>
-                <label>
-                    <input type="checkbox" />
-                    <span>Aceite para guardar os dados</span>
-                </label>
-            <p>
-                <label>
-                    <input type="checkbox" />
-                    <span>Aceite para compartilhar dados</span>
-                </label>
-            <p>
-                <label>
-                    <input type="checkbox" />
-                    <span>Comprometimento com termos de uso do site</span>
-                </label>
+            <p>Nome Completo: <input type="text" name="nome" class="input"></p>
+            <p>Data de nascimento: <input type="date" name="NomeFantasia" class="input"></p>
+            <p>CPF: <input type="text" name="CNPJ" class="input" maxlength="15" placeholder="xxx.xxx.xxx-xx"></p>
+            <p>Endereço: <input type="text" name="Endereço" placehoder=""></p>
+            <p>Email do usuaário: <input type="text" name="EmailEmpresa" class="input" placeholder="exemplo@email.com"></p>
+            <p>Senha: <input type="password" name="password" class="input" placeholder="xxxxxxx"></p>
+            <p>Telefone/Celular: <input type="text" name="TelCelJovem" class="input"></p>
+            <p>Com quem mora? <input type="text" name="" id=""></p>
+            <p>Com quem mora? <input type="text" name="" id=""></p>
+            <p>Tem filho? <input type="text" name="" id=""></p>
+            <p>Sustenta alguém? <input type="text" name="" id=""></p>
+            <p>Qual a sua escolaridade <input type="text" name="" id="" placeholder="Ex: Ensino incompleto, Ensino fundamental completo, etc." class="input"></p>
+            <p>Gênero: </p>
+            <label>
+                <input name="group1" type="radio" />
+                <span>Masculino</span>
+            </label>
+            <label>
+                <input name="group1" type="radio" />
+                <span>Feminino</span>
+            </label>
+            <label>
+                <input name="group1" type="radio" checked/>
+                <span>Prefiro não dizer</span>
+            </label>
             </p>
-            <input type="submit" value="Cadastrar Empresa" class="waves-effect waves-light btn-small">
+
+            <p>Leia antes de marcar:</p>
+            <label>
+                <input name="info1" type="radio" />
+                <span>Aceite para guardar os dados</span>
+            </label>
+            <label>
+                <input name="info2" type="radio" />
+                <span>Aceite para compartilhar dados + histórico de curso com a empresa</span>
+            </label>
+            <label>
+                <input name="info3" type="radio" />
+                <span>Comprometimento com termos de uso do site</span>
+            </label>
+            </p>
+            
+            <input type="submit" value="Cadastrar Usuario" class="waves-effect waves-light btn-small">
         </form>
     </section>
 
