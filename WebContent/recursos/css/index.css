@@ -1,0 +1,40 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+}
+/* Header nav i */
+#nav-mobile ul li i{
+    margin-right:10px;
+}
+
+
+
+
+
+/* section */
+section{
+    width:80%;
+    margin:auto;
+}
+#desc p{
+    text-align: justify;
+}
+#cursoVaga{
+    margin-top:50px;
+}
+#curso, #vaga{
+    padding:20px;
+    border-radius:15px;
+}
+#curso{
+    float:left;
+    width:40%;
+}
+#vaga{
+    float:right;
+    width:40%;
+}
+
+
+
