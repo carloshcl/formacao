@@ -1,0 +1,23 @@
+/* Section */
+#desc p {
+    margin-top:40px;
+    font-weight:bold;
+}
+/* Formulario */
+form{
+    width:50%;
+    margin:45px auto 25px auto
+}
+form p {
+    font-weight: bold;
+}
+.input::-webkit-input-placeholder{
+    color:black;
+    font-weight:300;
+}
+
+#input-submit{
+    padding:10px;
+}
+
+

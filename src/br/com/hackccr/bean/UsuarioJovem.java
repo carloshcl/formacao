@@ -139,16 +139,6 @@ public class UsuarioJovem {
 		this.ciencia_dados = ciencia_dados;
 	}
 
-
-	public ConexaoKit getConkit() {
-		return conkit;
-	}
-
-
-	public void setConkit(ConexaoKit conkit) {
-		this.conkit = conkit;
-	}
-	
 	
 	
 }

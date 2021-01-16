@@ -1,16 +1,7 @@
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-}
-/* Header nav i */
+/*Header*/
 #nav-mobile ul li i{
     margin-right:10px;
 }
-
-
-
-
 
 /* section */
 section{

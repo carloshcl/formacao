@@ -1,0 +1,41 @@
+/* Pesquisa cursos */
+section{
+    padding:10px;
+}
+
+section div p{
+    width:70%;
+    text-align:justify;
+    margin-left:15%;
+}
+#btn-search{
+    border:none;
+    font-size:1.5em;
+    cursor:pointer;
+    float:right;
+}
+
+form{
+    width:50%;
+    margin:45px auto 25px auto
+}
+form select{
+    
+}
+#search{
+    
+}
+div form label{
+    font-weight: bold;
+    color:black;
+    font-size:1.2em;
+}
+#info{
+    margin-top:45px;
+}
+.cursos{
+    width:80%;
+    margin-top:50px;
+    background-color:rgb(57, 57, 255);
+    padding:10px;
+}
