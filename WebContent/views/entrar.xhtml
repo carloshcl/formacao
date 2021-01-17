@@ -7,7 +7,7 @@
 <h:head>
 
 </h:head>
-<body>
+<h:body>
 	<ui:composition template="/views/layoutLogin.xhtml">
 		<ui:define name="content">
 
@@ -27,15 +27,22 @@
 				<div class="col s6">
 					<form id="user-empresa">
 						<p class="white-text">
-							Email Empresa: <input type="email" name="emai-jovem"
+							Email Empresa: <input type="email" name="emai-empresa"
 								class="input"></input>
 						</p>
 						<p class="white-text">
 							Senha: <input type="password" name="psw-jovem" class="input"></input>
-								<a href="cadJovem.html" class="white-text">Ainda não possui
-									uma conta? Cadastre-se já! </a>
+							<a href="#{request.contextPath}/views/cadEmp.xhtml" class="white-text">Ainda não possui
+								uma conta? Cadastre-se já! </a>
 						</p>
-						<button class="waves-effect waves-light btn-large">Entrar</button>
+						
+						<button class="btn waves-effect waves-light" type="submit"
+							name="enviar">
+							ENTRAR
+							<h:commandButton id="enviar" action="#{empresaBean.criarUser()}"
+								value="     " />
+
+						</button>
 					</form>
 				</div>
 			</div>
@@ -47,19 +54,28 @@
 						</p>
 						<p class="white-text">
 							Senha: <input type="password" name="psw-jovem" class="input"></input>
-								<a href="cadJovem.html" class="white-text">Ainda não possui
-									uma conta? Cadastre-se já! </a>
+							<a href="#{request.contextPath}/views/cadJovem.xhtml"
+								class="white-text">Ainda não possui uma conta? Cadastre-se
+								já! </a>
 						</p>
-						<button class="waves-effect waves-light btn-large">Entrar</button>
+						
+							
+						<button class="btn waves-effect waves-light" type="submit"
+							name="enviar">
+							ENTRAR
+							<h:commandButton id="enviar" action="#{usuarioJovemBean.criarUser()}"
+								value="     " />
+
+						</button>
 					</form>
 				</div>
 			</div>
 			</section>
 
 			<script src="../recursos/js/entrar.js"></script>
-			
+
 		</ui:define>
 	</ui:composition>
 
-</body>
+</h:body>
 </html>

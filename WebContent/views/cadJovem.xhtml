@@ -19,8 +19,7 @@
 					passo para novas oportunidades! Comece preenchendo o formulário
 					aqui em abaixo para te conhecermos melhor</p>
 			</div>
-			<!-- formulario -->
-			<form name="form">
+			<!-- formulario --> <h:form name="form">
 				<p class="white-text">
 					Nome Completo:
 					<h:inputText id="nome" value="#{usuarioJovemBean.user.nome}"
@@ -83,19 +82,23 @@
 				<p class="white-text">Gênero:</p>
 				<label> <input name="group1" type="radio" /> <span
 					class="white-text">Masculino</span>
-				</label> <label> <input name="group1" type="radio" /> <span
+				</label>
+				<label> <input name="group1" type="radio" /> <span
 					class="white-text">Feminino</span>
-				</label> <label> <input name="group1" type="radio" checked="checked" />
+				</label>
+				<label> <input name="group1" type="radio" checked="checked" />
 					<span class="white-text">Prefiro não dizer</span>
 				</label>
 
 				<p class="white-text">Leia antes de marcar:</p>
 				<label> <input name="info1" type="radio" /> <span
 					class="white-text">Aceite para guardar os dados</span>
-				</label> <label> <input name="info2" type="radio" /> <span
+				</label>
+				<label> <input name="info2" type="radio" /> <span
 					class="white-text">Aceite para compartilhar dados +
 						histórico de curso com a empresa</span>
-				</label> <label> <input name="info3" type="radio" /> <span
+				</label>
+				<label> <input name="info3" type="radio" /> <span
 					class="white-text">Comprometimento com termos de uso do site</span>
 				</label>
 
@@ -108,9 +111,7 @@
 
 					</button>
 				</div>
-			</form>
-			</section>
-
+			</h:form> </section>
 
 		</ui:define>
 	</ui:composition>

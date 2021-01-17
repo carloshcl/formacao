@@ -8,7 +8,7 @@
 <head>
 
 </head>
-<body>
+<h:body>
 	<ui:composition template="/views/layoutForm.xhtml">
 		<ui:define name="content">
 
@@ -20,7 +20,7 @@
 					desse movimento!</p>
 			</div>
 			<!-- formulario -->
-			<form name="form">
+			<h:form name="form">
 				<p class="white-text">
 					Razão Social:
 					<h:inputText id="razao" value="#{empresaBean.user.razaosocial}"
@@ -29,9 +29,9 @@
 				</p>
 				<p class="white-text">
 					Usuario gestor:
-					<h:inputText id="razao" value="#{empresaBean.user.representante}"
+					<h:inputText id="gestor" value="#{empresaBean.user.representante}"
 						required="true" />
-					<h:message for="razao" />
+					<h:message for="gestor" />
 				</p>
 				<p class="white-text">
 					Nome Fantasia:
@@ -102,12 +102,10 @@
 						value="     " />
 
 				</button>
-			</form>
+			</h:form>
 			</section>
-
-
 
 		</ui:define>
 	</ui:composition>
-</body>
+</h:body>
 </html>
