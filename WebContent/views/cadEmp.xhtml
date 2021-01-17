@@ -5,7 +5,10 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:b="http://bootsfaces.net/ui">
 
-<h:head></h:head>
+<h:head>
+	<link rel="stylesheet"
+		href="#{request.contextPath}/recursos/css/form.css"></link>
+</h:head>
 <body>
 	<ui:composition template="/views/layout.xhtml">
 		<ui:define name="content">
@@ -15,20 +18,22 @@
 				<p class="flow-text center-align">Vem fazer parte desse
 					movimento!</p>
 			</div>
-			<!-- formulario -->
-			<h:form>
+			<!-- formulario --> <h:form>
 				<p>
-					Razão Social: <h:inputText id="razao" value="#{empresaBean.user.razaosocial}"
+					Razão Social:
+					<h:inputText id="razao" value="#{empresaBean.user.razaosocial}"
 						required="true" />
 					<h:message for="razao" />
 				</p>
 				<p>
-					Nome Fantasia: <h:inputText id="nome" value="#{empresaBean.user.nome}"
+					Nome Fantasia:
+					<h:inputText id="nome" value="#{empresaBean.user.nome}"
 						required="true" />
 					<h:message for="nome" />
 				</p>
 				<p>
-					CNPJ: <h:inputText id="cnpj" value="#{empresaBean.user.CNPJ}"
+					CNPJ:
+					<h:inputText id="cnpj" value="#{empresaBean.user.CNPJ}"
 						required="true" />
 					<h:message for="cnpj" />
 				</p>
@@ -36,13 +41,15 @@
 					Endereço: <input type="text" name="Endereço"></input>
 				</p>
 				<p>
-					Email da Empresa: <h:inputText id="email" value="#{empresaBean.user.email_representante}"
-						required="true" />
+					Email da Empresa:
+					<h:inputText id="email"
+						value="#{empresaBean.user.email_representante}" required="true" />
 					<h:message for="email" />
 				</p>
 				<p>
-					Senha: <h:inputSecret id="senha" value="#{empresaBean.user.senha}"
-					required="true">
+					Senha:
+					<h:inputSecret id="senha" value="#{empresaBean.user.senha}"
+						required="true">
 					</h:inputSecret>
 					<h:message for="senha" />
 				</p>
@@ -77,12 +84,16 @@
 					</label>
 				</p>
 				<P>
-					<b:commandButton look="success" action="#{empresaBean.criarUser()}"
-						value="Cadastrar" />
+					<button class="btn waves-effect waves-light" type="submit"
+						name="enviar">
+						Cadastrar
+						<h:commandButton id="enviar" action="#{empresaBean.criarUser()}"
+							value="     " />
+
+					</button>
 				</P>
-			</h:form>
-			</section>
-			
+			</h:form> </section>
+
 		</ui:define>
 	</ui:composition>
 </body>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+ 	
+</h:head>
+<body>
+	<ui:composition template="/views/layoutLogin.xhtml">
+		<ui:define name="content">
+			<section>
+			<div class="row">
+				<div id="choose-user">
+					<p>Entrar como:</p>
+					<p>
+						<label> <input onlick="show(1)" name="login" type="radio"
+							id="empresa" checked="checked" /> <span>Empresa</span>
+						</label> <label> <input onlick="show(2)" name="login" type="radio"
+							id="jovem" /> <span>Jovem</span>
+						</label>
+					</p>
+				</div>
+
+				<div class="col s6">
+					<form id="user-empresa">
+						<p>
+							Email Empresa: <input type="email" name="emai-jovem"
+								class="input"></input>
+						</p>
+						<p>
+							Senha: <input type="password" name="psw-jovem" class="input"></input>
+						</p>
+						
+						<button class="btn waves-effect waves-light" type="submit"
+						name="entrar">
+						Cadastrar
+						<h:commandButton id="entrar" action="#{empresaBean.criarUser()}"
+							value="    " />
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<form id="user-jovem">
+						<p>
+							Email Jovem: 
+							<h:inputText id="nome" value="#{usuarioJovemBean.user.email}"
+						required="true" />
+					<h:message for="nome" />
+						</p>
+						<p>
+							Senha: 
+							<h:inputSecret id="nome" value="#{usuarioJovemBean.user.senha}"
+						required="true" />
+					<h:message for="nome" />
+						</p>
+						<button class="btn waves-effect waves-light" type="submit"
+						name="entrar">
+						Entrar
+						<h:commandButton id="entrar" action="#{usuarioJovemBean.Login()}"
+							value="    " />
+						</button>
+					</form>
+				</div>
+			</div>
+			</section>
+			<script src="../recursos/js/entrar.js"></script>
+		</ui:define>
+	</ui:composition>
+
+</body>
+</html>

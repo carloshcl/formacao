@@ -5,12 +5,27 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 <h:body>
-	<ui:composition template="/views/layout.xhtml">
+	<ui:composition template="/views/layoutEmpresaLogada.xhtml">
 		<ui:define name="content">
 			<section> <!-- descricao -->
 			<div id="desc">
-				<h1 class="center-align">Area da Empresa</h1>
-				<p class="flow-text">Bem-vindo, <h:outputText value="#{empresaBean.retornaUser()}" /></p>
+				<h1 class="center-align">Área da Empresa 
+				<h:outputText value="#{empresaBean.retornaUser()}" />
+				</h1>
+				<!-- <p class="flow-text">
+					Bem-vindo,
+					<h:outputText value="#{empresaBean.retornaUser()}" />
+				</p> -->
+
+				<section>
+				<div>
+					<a class="waves-effect waves-light btn-large"
+						href="altEmpresa.html">alterar dados do cadastro </a> <a
+						class="waves-effect waves-light btn-large" href="vagas.html">Ver
+						minhas vagas</a> <a class="waves-effect waves-light btn-large"
+						href="cursos.html">Ver meus cursos</a>
+				</div>
+				</section>
 
 			</div>
 			</section>

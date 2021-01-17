@@ -42,8 +42,18 @@ div form label{
     color:#fff;
     float:right;
 }
+.edita{
+    color:#fff;
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+}
 .data-pub{
     margin-left:10px;
     color:#fff;
     font-size:1.3em
+}
+.vagas span > p{
+    font-size:15px;
+    font-weight: bold;
 }

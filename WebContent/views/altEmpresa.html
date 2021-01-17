@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 111</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="../public/css/form.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="center-align hide-on-med-and-down">
+                    <li><a href="index.html"> <i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
+                    <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
+                    </li>
+                    <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
+                    <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
+                    <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
+                    <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Menu Mobile -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html"> <i class="fas fa-home"></i> Home</a></li>
+            <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
+            <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
+            </li>
+            <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas </a></li>
+            <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos </a></li>
+            <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar </a></li>
+            <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar </a></li>
+        </ul>
+        </nav>
+        <script src="../public/js/validacoes.js"></script>
+    </header>
+
+    <section>
+        <div id="desc">
+            <h1 class="center-align"> Nome do Site </h1>
+            <p class="flow-text center-align"> Altere seus dados</p>
+        </div>
+        <!-- formulario -->
+        <form name="form">
+            <p>Razão Social: <input type="text" name="RazaoSocial" class="input" required></p>
+            <p>Nome Fantasia: <input type="text" name="NomeFantasia" class="input" required></p>
+            <p>CNPJ: <input type="text" name="CNPJ" class="input" onKeyPress="MascaraCNPJ(form.CNPJ);" maxlength="18" required ></p>
+            <p>Endereço: <input type="text" name="Endereço"></p>
+            <p>E-mail da Empresa: <input type=email name="EmailEmpresa" class="input"></p>
+            <p>Senha: <input type="password" name="password" class="input" required></p>
+            <p>Telefone/Celular: <input type="text" onKeyPress="MascaraTelefone(form.TelCel);" maxlength="15" name="TelCel" class="input" required></p>
+            <p>Site: <input type="text" name="Site"></p>
+            <p>Número de Funcionarios: <input type="number" name="NumFunc" class="input" required></p>
+            <p>Área de atuação: <input type="text" name="AreaAtua" id="" class="input" placeholder="ex: Industria, Varejo, Saúde, Educação, Etc." required></p>
+            <p>
+                <label>
+                    <input type="checkbox" required/>
+                    <span>Aceite para guardar os dados</span>
+                </label>
+            <p>
+                <label>
+                    <input type="checkbox" required/>
+                    <span>Aceite para compartilhar dados</span>
+                </label>
+            <p>
+                <label>
+                    <input type="checkbox" required/>
+                    <span>Comprometimento com termos de uso do site</span>
+                </label>
+            </p>
+            <input type="submit" value="Alterar dados" class="waves-effect waves-light btn-small">
+        </form>
+    </section>
+
+
+
+
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Nome do Site</h5>
+                    <p class="grey-text text-lighten-4">Nossos Parceiros</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <a href="#" class="grey-text text-lighten-3"> Quero me Cadastrar!</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2020 Copyright Nome da Equipe(projeto)
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>

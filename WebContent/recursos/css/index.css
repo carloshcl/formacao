@@ -2,6 +2,9 @@
 #nav-mobile ul li i{
     margin-right:10px;
 }
+header nav{
+    background-color:#004aad
+}
 
 /* section */
 section{
@@ -17,6 +20,7 @@ section{
 #curso, #vaga{
     padding:20px;
     border-radius:15px;
+    background-color:#ff914d;
 }
 #curso{
     float:left;
@@ -34,5 +38,12 @@ section{
     text-decoration: underline;
 }
 
+/* footer */
+#footer{
+    background-color:#5288c2;
+}
+#copyright{
+    background-color:#004aad
+}
 
 

@@ -2,7 +2,11 @@
 section{
     padding:10px;
 }
-
+#meusCursos{
+    text-align:center;
+    font-size:20px;
+    margin-top:20px;
+}
 section div p{
     width:70%;
     text-align:justify;
@@ -15,18 +19,12 @@ section div p{
     float:right;
 }
 
-form{
+#dadosForm{
     width:50%;
     margin:45px auto 25px auto
 }
 
-form select{
-    
-}
-#search{
-    
-}
-div form label{
+#dadosForm label{
     font-weight: bold;
     color:black;
     font-size:1.2em;
@@ -44,5 +42,12 @@ div form label{
 .inscreve{
     color:#fff;
     float:right;
+    margin-top:10px
+}
+.edita{
+    color:#fff;
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
 }
 

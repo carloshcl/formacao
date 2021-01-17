@@ -1,6 +1,8 @@
 package br.com.hackccr.bean;
 
 import java.util.Date;
+import java.util.List;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
@@ -22,6 +24,7 @@ public class UsuarioJovem {
 	private String genero;
 	private String pne;
 	private boolean ciencia_dados;
+	private List<Cursos> listaCursos;
 	
 	public int getId() {
 		return id;
