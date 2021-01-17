@@ -1,3 +1,6 @@
+body{
+    background-color:#004aad
+}
 /*Header*/
 #nav-mobile ul li i{
     margin-right:10px;
@@ -14,6 +17,11 @@ section{
 #desc p{
     text-align: justify;
 }
+#desc img{
+    width:35%;
+    margin-top:20px;
+    margin-left: 30%;
+}
 #cursoVaga{
     margin-top:50px;
 }
@@ -22,17 +30,56 @@ section{
     border-radius:15px;
     background-color:#ff914d;
 }
-#curso{
-    float:left;
-    width:40%;
+
+#vaga, #curso{
+    margin:20px auto 0px auto;
+    width:100%;
 }
-#vaga{
+
+#vaga img, #curso img{
+    width:30%;
+}
+#vaga p, #curso p{
     float:right;
-    width:40%;
+    font-size:1.3em;
+    margin-right:280px;
 }
+#curso p{
+    margin-right:450px;
+}
+#vaga p > span, #curso p > span{
+    font-weight: bold;
+}
+/* mobile */
+@media screen and (max-width:735px){
+    #vaga, #curso{
+        width:100%;
+        height:max-content
+    }
+    #vaga p{
+        font-size:1.1em;
+        margin-right:10px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    #curso p{
+        font-size:1.1em;
+        margin-right:40px;;
+    }
+}
+/* Tablet */
+@media screen and (max-width:1024px){
+    #vaga p{
+        margin-right:20px;
+    }
+}
+
+
 .vermais{
     color:#fff;
     margin-top:10px;
+    font-size:1.3em;
 }
 .vermais:hover{
     text-decoration: underline;
@@ -40,6 +87,7 @@ section{
 
 /* footer */
 #footer{
+    margin-top:25px;
     background-color:#5288c2;
 }
 #copyright{

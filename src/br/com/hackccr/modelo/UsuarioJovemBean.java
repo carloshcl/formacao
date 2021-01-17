@@ -8,7 +8,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 import br.com.hackccr.bean.UsuarioJovem;
-import br.com.hackccr.negocio.CadastrarEmpresa;
 import br.com.hackccr.negocio.LogarJovem;
 
 @ManagedBean

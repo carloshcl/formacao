@@ -1,3 +1,13 @@
+
+body{
+    background-color:#004aad
+}
+/*Header*/
+
+header nav{
+    background-color:#004aad
+}
+/* Section */
 section div{
     display:flex;
     flex-direction: column;
@@ -10,6 +20,15 @@ section div a{
     margin-top:50px;
 }
 
+/* footer */
+
 footer{
     margin-top:120px;
+}
+#footer{
+    margin-top:25px;
+    background-color:#5288c2;
+}
+#copyright{
+    background-color:#004aad
 }

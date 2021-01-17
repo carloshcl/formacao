@@ -8,6 +8,7 @@
 <body>
 	<ui:composition template="/views/layoutVagas.xhtml">
 		<ui:define name="content">
+
 			<section> <!-- Pesquisa de cursos(tipo) -->
 			<div>
 				<form>
@@ -25,46 +26,113 @@
 			</div>
 			<!-- Informação -->
 			<div id="info">
-				<p class="flow-text">Aqui você encontra as vagas abertas nas
-					empresas parceiras para jovens da periferia em busca de se inserir
-					no mercado do trabalho</p>
+				<p class="flow-text white-text">Aqui você encontra as vagas
+					abertas nas empresas parceiras para jovens da periferia em busca de
+					se inserir no mercado do trabalho</p>
 			</div>
-			<!-- Vagas --> <!-- Só pode se candidatar quem tem cadastro -->
+			<!-- Somente usuario empresa pode ver --> <!-- <form id="vagaForm">
+            <p class="white-text">Nome da Vaga: <input type="text" name="nomeVaga" placeholder="ex:Programador Java"></p>
+            <p class="white-text">Nivel de escolaridade: <input type="text" name="escolaridade" placeholder="Cursando Sistema de informação"> </p>
+            <p class="white-text">Cursos/Materias: <input type="text" name="cursoMaterial" placeholder="É necessario ter x curso"></p>
+            <p class="white-text">Link do Conteúdo: <input type="text" name="linkConteudo" placeholder="www.cursox.com"></p>
+            <p class="white-text">Resumo das atividades: <input type="text" name="atividade" placeholder="Criar app com java"></p>
+            <p class="white-text">Beneficíos: <input type="text" name="beneficio" placeholder="Almoço na empresa/passagem de onibus"></p> 
+            <p class="white-text">Contato para dúvida e inscrição: <input type="text" name="contatoDuvida" placeholder="para tirar todas as dúvidas acesse www.exemplo.com"></p>
+            <p class="white-text">Anexo logo/capa: <input type="text" name="logoCapa" placeholder=""></p> 
+            <p class="white-text">Anexo adicionais: <input type="text" name="adicionais" placeholder="Inscrição aberta até x dias"></p> 
+            <p class="white-text">Cidade/Estado: <input type="text" name="cidade-estado" placeholder=""></p> 
+            <button type="submit" class="waves-effect waves-light btn-small">Publicar</button>         
+        </form> --> <!-- Vagas --> <!-- Só pode se candidatar quem tem cadastro -->
 			<div class="row center-align vagas">
-				<p class="data-pub">xx/xx/xx</p>
+				<p class="white-text">02/12/2020</p>
 				<div class="col s4 ">
-					<span class="flow-text">Logo empresa X</span>
+					<img src="../recursos/img/vaga.png" alt="vaga"></img>
 				</div>
 				<div class="col s8 ">
-					<span class="flow-text">Descrição e link da empresa x</span> <a
-						class="insert" href="#">Candidatar</a>
+					<span class="flow-text">
+						<p class="white-text">
+							<span class="black-text">Vaga:</span> <br></br> Operador de
+							atendimento <br></br> <span class="black-text">Empresa:</span> <br></br>
+							CRR <br></br> <span class="black-text">Local:</span> <br></br>
+							Bauru-SP <br></br> <span class="black-text">Cursos
+								necessários:</span> <br></br> Segurança no trânsito, Excel básico <br></br>
+							<span class="black-text">Vaga:</span> <br></br> Operador de
+							atendimento
+						</p>
+					</span> <a class="insert" href="entrar.html">Candidatar</a> <a
+						href="editVaga.html" class="edita">Editar</a>
+					<!--Somente user empresa ve-->
 				</div>
 			</div>
 
 
 			<div class="row center-align vagas">
-				<p class="data-pub">xx/xx/xx</p>
-				<div class="col s4">
-					<span class="flow-text">Logo empresa Y.</span>
+				<p class="white-text">05/12/2020</p>
+				<div class="col s4 ">
+					<img src="../recursos/img/vaga3.png" alt="vaga"></img>
 				</div>
-				<div class="col s8">
-					<span class="flow-text">Descrição e link empresa Y Y</span> <a
-						class="insert" href="#">Candidatar</a>
+				<div class="col s8 ">
+					<span class="flow-text">
+						<p class="white-text">
+							<span class="black-text">Vaga:</span> <br></br> Assistente de
+							Marketing <br></br> <span class="black-text">Empresa:</span> <br></br>
+							Grupo Pão de Açucar <br></br> <span class="black-text">Local:</span>
+							<br></br> Remoto(Home office) <br></br> <span class="black-text">Benefícios:</span>
+							<br></br> VR,seguro saúde, vale compras HD <br></br> <span
+								class="black-text">Cursos necessários:</span> <br></br> MKT
+							Digital, Excel básico <br></br>
+						</p>
+					</span> <a class="insert" href="entrar.html">Candidatar</a> <a
+						href="editVaga.html" class="edita">Editar</a>
+					<!--Somente user empresa ve-->
 				</div>
 			</div>
 
 			<div class="row center-align vagas">
-				<p class="data-pub">xx/xx/xx</p>
-				<div class="col s4">
-					<span class="flow-text">Logo empresa A.</span>
+				<p class="white-text">04/12/2020</p>
+				<div class="col s4 ">
+					<img src="../recursos/img/vaga1.png" alt="vaga"></img>
 				</div>
-				<div class="col s8">
-					<span class="flow-text">Descrição e link empresa A</span> <a
-						class="insert" href="#">Candidatar </a>
+				<div class="col s8 ">
+					<span class="flow-text">
+						<p class="white-text">
+							<span class="black-text">Vaga:</span> <br></br> Controle de
+							estoque <br></br> <span class="black-text">Empresa:</span> <br></br>
+							Grupo Zaffari <br></br> <span class="black-text">Local:</span> <br></br>
+							Porto Alegre-RS <br></br> <span class="black-text">Benefícios:</span>
+							<br></br> VA e seguro saúde <br></br> <span class="black-text">Cursos
+								necessários:</span> <br></br>Empreendedorismo, Valores Grupo Zaffari <br></br>
+						</p>
+					</span> <a class="insert" href="entrar.html">Candidatar</a> <a
+						href="editVaga.html" class="edita">Editar</a>
+					<!--Somente user empresa ve-->
+				</div>
+			</div>
+
+			<div class="row center-align vagas">
+				<p class="white-text">02/12/2020</p>
+				<div class="col s4 ">
+					<img src="../recursos/img/vaga2.png" alt="vaga"></img>
+				</div>
+				<div class="col s8 ">
+					<span class="flow-text">
+						<p class="white-text">
+							<span class="black-text">Vaga:</span> <br></br> Assistente de
+							solda <br></br> <span class="black-text">Empresa:</span> <br></br>
+							Ford Motors <br></br> <span class="black-text">Local:</span> <br></br>
+							Camaçari-BA <br></br> <span class="black-text">Benefícios:</span>
+							<br></br> VA,VR e transporte fretado <br></br> <span
+								class="black-text">Cursos necessários:</span> <br></br>
+							Segurança na fabrica <br></br>
+						</p>
+					</span> <a class="insert" href="entrar.html">Candidatar</a> <a
+						href="editVaga.html" class="edita">Editar</a>
+					<!--Somente user empresa ve-->
 				</div>
 			</div>
 
 			</section>
+
 		</ui:define>
 	</ui:composition>
 </body>

@@ -1,3 +1,10 @@
+body{
+    background-color:#004aad
+}
+/* HEader */
+header nav{
+    background-color:#004aad
+}
 /* Section */
 #desc p {
     margin-top:40px;
@@ -12,12 +19,27 @@ form p {
     font-weight: bold;
 }
 .input::-webkit-input-placeholder{
-    color:black;
+    color:white;
     font-weight:300;
+}
+.input{
+    color:white;
+}
+#venha img{
+    width:30%;
+    margin-top:20px;
+    margin-left: 30%;
 }
 
 #input-submit{
     padding:10px;
+}
+/* form */
+#footer{
+    background-color:#5288c2;
+}
+#copyright{
+    background-color:#004aad
 }
 
 

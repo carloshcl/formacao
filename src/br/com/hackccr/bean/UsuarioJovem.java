@@ -1,5 +1,6 @@
 package br.com.hackccr.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -7,7 +8,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 
-public class UsuarioJovem {
+public class UsuarioJovem implements Serializable{
+	private static final long serilVersionUID = 1L;
 
 	private int id;
 	private String nome;

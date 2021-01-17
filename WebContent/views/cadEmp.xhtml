@@ -5,94 +5,107 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:b="http://bootsfaces.net/ui">
 
-<h:head>
-	<link rel="stylesheet"
-		href="#{request.contextPath}/recursos/css/form.css"></link>
-</h:head>
+<head>
+
+</head>
 <body>
-	<ui:composition template="/views/layout.xhtml">
+	<ui:composition template="/views/layoutForm.xhtml">
 		<ui:define name="content">
+
 			<section>
-			<div id="desc">
-				<h1 class="center-align">Nome do Site</h1>
-				<p class="flow-text center-align">Vem fazer parte desse
-					movimento!</p>
+			<div id="venha">
+				<img src="../recursos/img/logo-main.png" alt="formAção"
+					class="responsive-img"></img>
+				<p class="flow-text center-align white-text">Vem fazer parte
+					desse movimento!</p>
 			</div>
-			<!-- formulario --> <h:form>
-				<p>
+			<!-- formulario -->
+			<form name="form">
+				<p class="white-text">
 					Razão Social:
 					<h:inputText id="razao" value="#{empresaBean.user.razaosocial}"
 						required="true" />
 					<h:message for="razao" />
 				</p>
-				<p>
+				<p class="white-text">
+					Usuario gestor:
+					<h:inputText id="razao" value="#{empresaBean.user.representante}"
+						required="true" />
+					<h:message for="razao" />
+				</p>
+				<p class="white-text">
 					Nome Fantasia:
 					<h:inputText id="nome" value="#{empresaBean.user.nome}"
 						required="true" />
 					<h:message for="nome" />
 				</p>
-				<p>
+				<p class="white-text">
 					CNPJ:
 					<h:inputText id="cnpj" value="#{empresaBean.user.CNPJ}"
 						required="true" />
 					<h:message for="cnpj" />
 				</p>
-				<p>
+				<p class="white-text">
 					Endereço: <input type="text" name="Endereço"></input>
 				</p>
-				<p>
-					Email da Empresa:
+				<p class="white-text">
+					E-mail da Empresa:
 					<h:inputText id="email"
 						value="#{empresaBean.user.email_representante}" required="true" />
 					<h:message for="email" />
 				</p>
-				<p>
+				<p class="white-text">
 					Senha:
 					<h:inputSecret id="senha" value="#{empresaBean.user.senha}"
 						required="true">
 					</h:inputSecret>
 					<h:message for="senha" />
 				</p>
-				<p>
-					Telefone/Celular: <input type="text" name="TelCel" class="input"></input>
+				<p class="white-text">
+					Telefone/Celular: <input type="text"
+						onKeyPress="MascaraTelefone(form.TelCel);" maxlength="15"
+						name="TelCel" class="input" required="true"></input>
 				</p>
-				<p>
+				<p class="white-text">
 					Site: <input type="text" name="Site"></input>
 				</p>
-				<p>
-					Número de Funcionarios: <input type="text" name="NumFunc"
-						class="input"></input>
+				<p class="white-text">
+					Número de Funcionarios: <input type="number" name="NumFunc"
+						class="input" required="true"></input>
 				</p>
-				<p>
+				<p class="white-text"></p>
+				<p class="white-text">
 					Área de atuação: <input type="text" name="AreaAtua" id=""
 						class="input"
-						placeholder="ex: Industria, Varejo, Saúde, Educação, Etc."></input>
+						placeholder="ex: Industria, Varejo, Saúde, Educação, Etc."
+						required="true"></input>
 				</p>
+				<p class="white-text"></p>
+				<label> <input type="checkbox" required="true" /> <span
+					class="white-text">Aceite para guardar os dados</span>
+				</label>
 				<p>
-					<label> <input type="checkbox" /> <span>Aceite para
-							guardar os dados</span>
+					<label> <input type="checkbox" required="true" /> <span
+						class="white-text">Aceite para compartilhar dados</span>
 					</label>
 				</p>
 				<p>
-					<label> <input type="checkbox" /> <span>Aceite para
-							compartilhar dados</span>
+					<label> <input type="checkbox" required="true" /> <span
+						class="white-text">Comprometimento com termos de uso do
+							site</span>
 					</label>
 				</p>
-				<p>
-					<label> <input type="checkbox" /> <span>Comprometimento
-							com termos de uso do site</span>
-					</label>
-				</p>
-				<P>
-					<button class="btn waves-effect waves-light" type="submit"
-						name="enviar">
-						Cadastrar
-						<h:commandButton id="enviar" action="#{empresaBean.criarUser()}"
-							value="     " />
+				<button class="btn waves-effect waves-light" type="submit"
+					name="enviar">
+					Cadastrar Empresa
+					<h:commandButton id="enviar" action="#{empresaBean.criarUser()}"
+						value="     " />
 
-					</button>
-				</P>
-			</h:form> </section>
+				</button>
+			</form>
+			</section>
+
+
 
 		</ui:define>
 	</ui:composition>

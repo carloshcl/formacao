@@ -6,62 +6,100 @@
 
 <h:head></h:head>
 <body>
-	<ui:composition template="/views/layout.xhtml">
+	<ui:composition template="/views/layoutCursos.xhtml">
 		<ui:define name="content">
-			<section> <!-- Pesquisa de cursos(tipo) -->
-			<div>
-				<form>
-					<select class="browser-default">
-						<option value="" disabled="disabled" selected="selected">Filtro</option>
-						<option value="2">Saúde</option>
-						<option value="3">Educação</option>
-						<option value="4">Outro</option>
-					</select> <input type="search" name="" id="search"
-						placeholder="Pesquisar por um curso"></input>
-					<button class="white" id="btn-search">
-						<i class="fas fa-search"></i>
-					</button>
-				</form>
-			</div>
-			<!-- Informação -->
-			<div id="info">
-				<p class="flow-text">Conheça nossa série de cursos e materias de
-					apoio desenvolvidas com foco em capacitar jovens de periferia em
-					busca de se inserir no mercado de trabalho</p>
-			</div>
-			<!-- Cursos -->
-			<div class="row center-align cursos">
-				<div class="col s4 ">
-					<span class="flow-text">Imagem conteúdo X</span>
-				</div>
-				<div class="col s8 ">
-					<span class="flow-text">Descrição e link conteudo X</span>
-				</div>
-				<a href="#" class="inscreve">Inscrever-se</a>
-			</div>
+		<section>
+        <!-- Pesquisa de cursos(tipo) -->
+        <div>
+            <form id="dadosForm">
+                <select class="browser-default">
+                    <option value="" disabled="disabled" selected="selected">Filtro</option>
+                    <option value="1">Saúde</option>
+                    <option value="2">Educação</option>
+                    <option value="3">Outro</option>
+                </select>
+                 <input type="search" name="" id="search" placeholder="Pesquisar por um curso"></input>
+                <button class="white" id="btn-search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
 
-			<div class="row center-align cursos">
-				<div class="col s4">
-					<span class="flow-text">Imagem conteúdo Y.</span>
-				</div>
-				<div class="col s8">
-					<span class="flow-text">Descrição e link conteudo Y</span>
-				</div>
-				<a href="#" class="inscreve">Inscrever-se</a>
-			</div>
+        <!-- Essa área somente o usuario empresa pode ver -->
+       <!--  <div>
+            <form id="cursoForm">
+                <p class="white-text">Nome-do-Curso: <input type="text" name="nomeCurso"></p>
+                <p class="white-text">Tipo-Material: <input type="text" name="tipoMaterial"></p>
+                <p class="white-text">Duração-estimada: <input type="text" name="duracaoCurso"></p>
+                <p class="white-text">Anexo-logo: <input type="text" name="anexoLogo"></p>
+                <p class="white-text">Anexo-materias: <input type="text" name="anexoMaterial"></p>
+                <p class="white-text">Publico-alvo: <input type="text" name="publicoAlvo"></p> 
+                <button type="submit" class="waves-effect waves-light btn-small">Publicar</button>         
+            </form>
+        </div> -->
+        <!-- Fim da vizualização Usuario Empresa -->
 
-			<div class="row center-align cursos">
-				<div class="col s4">
-					<span class="flow-text">Imagem conteúdo A.</span>
-				</div>
-				<div class="col s8">
-					<span class="flow-text">Descrição e link conteudo A</span>
-				</div>
-				<a href="#" class="inscreve">Inscrever-se</a>
-			</div>
+        <!-- Informação -->
+        <div id="info">
+            <p class="flow-text white-text">Conheça nossa série de cursos e materias de apoio desenvolvidas com foco
+                em capacitar jovens de periferia em busca de se inserir no mercado de trabalho</p>
+        </div>
+        <!-- Cursos -->
+        <div class="row center-align cursos">
+            <div class="col s4 "><img src="../recursos/img/curso.png" alt="curso"></img></div>
+            <div class="col s8 "><p>
+                <span class="black-text">Nome:</span> Excel <br></br>
+                <span class="black-text">Tipo:</span> Video <br></br>
+                <span class="black-text">Duração</span> 1 hora <br></br>
+            </p></div>
+            <a href="#" class="inscreve">Inscrever-se</a> <!-- somente usuario jovem cadastrado-->
+            <a href="editCurso.html" class="edita">Editar</a> <!--Somente usuario empresa-->
+        </div>
 
-			</section>
+        <div class="row center-align cursos">
+            <div class="col s4 "><img src="../recursos/img/curso1.png" alt="curso"></img></div>
+            <div class="col s8 "><p>
+                <span class="black-text">Nome:</span> Empreendedorismo <br></br>
+                <span class="black-text">Tipo:</span> Video <br></br>
+                <span class="black-text">Duração</span> 2 horas <br></br>
+            </p></div>
+            <a href="#" class="inscreve">Inscrever-se</a> <!-- somente usuario jovem cadastrado-->
+            <a href="editCurso.html" class="edita">Editar</a> <!--Somente usuario empresa-->
+        </div>
 
+        <div class="row center-align cursos">
+            <div class="col s4 "><img src="../recursos/img/curso2.png" alt="curso"></img></div>
+            <div class="col s8 "><p>
+                <span class="black-text">Nome:</span> Segurança na Fábrica <br></br>
+                <span class="black-text">Tipo:</span> Apresentação em pdf <br></br>
+                <span class="black-text">Duração</span> 15 minutos <br></br>
+            </p></div>
+            <a href="#" class="inscreve">Inscrever-se</a> <!-- somente usuario jovem cadastrado-->
+            <a href="editCurso.html" class="edita">Editar</a> <!--Somente usuario empresa-->
+        </div>
+
+        <div class="row center-align cursos">
+            <div class="col s4 "><img src="../recursos/img/curso3.png" alt="curso"></img></div>
+            <div class="col s8 "><p>
+                <span class="black-text">Nome:</span> Segurança no Transito <br></br>
+                <span class="black-text">Tipo:</span> Apresentação em pdf <br></br>
+                <span class="black-text">Duração</span> 30 minutos <br></br>
+            </p></div>
+            <a href="#" class="inscreve">Inscrever-se</a> <!-- somente usuario jovem cadastrado-->
+            <a href="editCurso.html" class="edita">Editar</a> <!--Somente usuario empresa-->
+        </div>
+
+        <div class="row center-align cursos">
+            <div class="col s4 "><img src="../recursos/img/curso4.png" alt="curso"></img></div>
+            <div class="col s8 "><p>
+                <span class="black-text">Nome:</span> Marketing Digital <br></br>
+                <span class="black-text">Tipo:</span> Video <br></br>
+                <span class="black-text">Duração</span> 1 hora e 30 minutos <br></br>
+            </p></div>
+            <a href="#" class="inscreve">Inscrever-se</a> <!-- somente usuario jovem cadastrado-->
+            <a href="editCurso.html" class="edita">Editar</a> <!--Somente usuario empresa-->
+        </div>
+
+    </section>
+		
 		</ui:define>
 	</ui:composition>
 </body>

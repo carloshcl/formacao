@@ -1,3 +1,11 @@
+body{
+    background-color:#004aad
+}
+/* header */
+header nav{
+    background-color:#004aad
+}
+/* section */
 section{
     padding:10px;
 }
@@ -12,15 +20,30 @@ section div p{
     font-size:1.5em;
     cursor:pointer;
     float:right;
+    background-color:#004aad;
 }
 
 form{
     width:50%;
     margin:45px auto 25px auto
 }
-
-form select{
-    
+.vagas img{
+    width:80%;
+}
+.vagas p{
+    float:right;
+    margin-right:150px;
+}
+.vagas a{
+    float:right;
+}
+@media screen and (max-width:780px){
+    .vagas img{
+        float:left;
+    }
+    .vagas p{
+        float:left;
+    }
 }
 
 div form label{
@@ -36,11 +59,13 @@ div form label{
     margin-top:50px;
     background-color:rgb(57, 57, 255);
     padding:10px;
+    height: max-content;
 }
 
 .insert{
     color:#fff;
     float:right;
+    margin-top:8px;
 }
 .edita{
     color:#fff;
@@ -49,11 +74,18 @@ div form label{
     margin-right:20px;
 }
 .data-pub{
-    margin-left:10px;
     color:#fff;
-    font-size:1.3em
+    font-size:1.3em;
 }
 .vagas span > p{
     font-size:15px;
     font-weight: bold;
+}
+
+/* footer */
+#footer{
+    background-color:#5288c2;
+}
+#copyright{
+    background-color:#004aad
 }

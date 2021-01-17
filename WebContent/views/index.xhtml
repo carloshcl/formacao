@@ -4,32 +4,43 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:body>
+<body>
 	<ui:composition template="/views/layout.xhtml">
 		<ui:define name="content">
+
 			<section> <!-- descricao -->
 			<div id="desc">
-				<h1 class="center-align">Logo do Site</h1>
-				<p class="flow-text">É um Jovem entre 18 e 14 anos de baixa
-					renda em busca de inserção no mercado de trabalho ou uma empresa
-					buscando contratar público? Venha fazer parte do movimento
+				<img src="../recursos/img/logo-main.png" alt="formAção"
+					class="responsive-img"></img>
+				<p class="flow-text white-text">É um Jovem entre 18 a 24 anos de
+					baixa renda em busca de inserção no mercado de trabalho ou uma
+					empresa buscando contratar público? Venha fazer parte do movimento
 					FormAção!</p>
 			</div>
-			<!-- Curos e Vagas -->
-			<div class="row" id="cursoVaga">
-				<div class="col s6" id="curso">
-					<span class="flow-text">Principais Cursos [aqui vai aparecer
-						cursos mais favoritado ou visitado</span> <br></br> <a href="cursos.html"
-						class="vermais">ver mais</a>
-				</div>
-				<div class="col s6" id="vaga">
-					<span class="flow-text">Principais Vagas [ aqui vai aparecer
-						as vagas mais recente] </span> <br></br> <a href="vagas.html"
-						class="vermais">ver mais</a>
-				</div>
+			<!-- Curos -->
+			<div class="col s6" id="curso">
+				<h4>Principais Cursos:</h4>
+				<img src="../recursos/img/curso.png" alt="curso excel"></img>
+				<p>
+					<span>Curso:</span> Excel <br></br> <span>Tipo:</span> Video <br></br>
+						<span>Duração:</span> 1 hora <br></br>
+				</p>
+				<br></br> <a href="vagas.html" class="vermais">ver mais</a>
 			</div>
+			<!-- Vagas -->
+			<div class="col s6" id="vaga">
+				<h4>Principais Vagas:</h4>
+				<img src="../recursos/img/vaga.png" alt="logoempresa"></img>
+				<p>
+					<span>Vaga:</span> Operador de Atendimento <br></br> <span>Empresa:</span>
+					CRR <br></br> <span>Beneficio:</span> VA, VR e seguro saúde 
+				</p>
+				<br></br> <a href="vagas.html" class="vermais">ver mais</a>
+			</div>
+
 			</section>
+
 		</ui:define>
 	</ui:composition>
-</h:body>
+</body>
 </html>

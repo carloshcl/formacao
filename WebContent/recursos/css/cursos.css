@@ -1,3 +1,11 @@
+body{
+    background-color:#004aad
+}
+/* header */
+header nav{
+    background-color:#004aad
+}
+
 /* Pesquisa cursos */
 section{
     padding:10px;
@@ -33,12 +41,36 @@ section div p{
     margin-top:45px;
 }
 .cursos{
-    width:80%;
+    width:60%;
     margin-top:50px;
     background-color:rgb(57, 57, 255);
     padding:10px;
 }
-
+.cursos img{
+    width:80%;
+}
+.cursos p{
+    float:right;
+    margin-right:150px;
+    color:white;
+    font-size:1.3em;
+}
+.cursos a{
+    float:right;
+}
+@media screen and (max-width:780px){
+    .cursos{
+        height: max-content;
+        padding:5px;
+        width:100%;
+    }
+    .cursos img{
+        float:left;
+    }
+    .cursos p{
+        float:left
+    }
+}
 .inscreve{
     color:#fff;
     float:right;
@@ -50,4 +82,14 @@ section div p{
     margin-top:10px;
     margin-right:20px;
 }
+
+/* footer */
+#footer{
+    margin-top:25px;
+    background-color:#5288c2;
+}
+#copyright{
+    background-color:#004aad
+}
+
 
