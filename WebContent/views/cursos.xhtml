@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<ui:composition template="/views/layout.xhtml">
+		<ui:define name="content">
+			<section> <!-- Pesquisa de cursos(tipo) -->
+			<div>
+				<form>
+					<select class="browser-default">
+						<option value="" disabled selected>Filtro</option>
+						<option value="1">Saúde</option>
+						<option value="2">Educação</option>
+						<option value="3">Outro</option>
+					</select> </i> <input type="search" name="" id="search"
+						placeholder="Pesquisar por um curso">
+						<button class="white" id="btn-search">
+							<i class="fas fa-search"></i>
+						</button>
+				</form>
+			</div>
+			<!-- Informação -->
+			<div id="info">
+				<p class="flow-text">Conheça nossa série de cursos e materias de
+					apoio desenvolvidas com foco em capacitar jovens de periferia em
+					busca de se inserir no mercado de trabalho</p>
+			</div>
+			<!-- Cursos -->
+			<div class="row center-align cursos">
+				<div class="col s4 ">
+					<span class="flow-text">Imagem conteúdo X</span>
+				</div>
+				<div class="col s8 ">
+					<span class="flow-text">Descrição e link conteudo X</span>
+				</div>
+				<a href="#" class="inscreve">Inscrever-se</a>
+			</div>
+
+			<div class="row center-align cursos">
+				<div class="col s4">
+					<span class="flow-text">Imagem conteúdo Y.</span>
+				</div>
+				<div class="col s8">
+					<span class="flow-text">Descrição e link conteudo Y</span>
+				</div>
+				<a href="#" class="inscreve">Inscrever-se</a>
+			</div>
+
+			<div class="row center-align cursos">
+				<div class="col s4">
+					<span class="flow-text">Imagem conteúdo A.</span>
+				</div>
+				<div class="col s8">
+					<span class="flow-text">Descrição e link conteudo A</span>
+				</div>
+				<a href="#" class="inscreve">Inscrever-se</a>
+			</div>
+
+			</section>
+
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

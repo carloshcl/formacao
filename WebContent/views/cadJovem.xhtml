@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<head>
+</head>
+<h:body>
+	<ui:composition template="/views/layoutForm.xhtml">
+		<ui:define name="content">
+			<section>
+			<div id="desc">
+				<h1 class="center-align">Nome do Site</h1>
+				<p class="flow-text center-align">Esse é o primeiro passo para
+					novas oportunidades! Comece preenchendo o formulário aqui em abaixo
+					para te conhecermos melhor</p>
+			</div>
+			<!-- formulario --> <h:form>
+				<p>
+					Nome Completo:
+					<h:inputText id="nome" value="#{usuarioJovemBean.user.nome}"
+						required="true" />
+					<h:message for="nome" />
+				</p>
+				<p>
+					Data de nascimento: 
+					<h:inputText id="dataNascimento"
+						value="#{usuarioJovemBean.user.datanasc}" required="true">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+					</h:inputText>
+					<h:message for="dataNascimento" />
+
+				</p>
+				<p>
+					CPF:
+					<h:inputText id="cpf" value="#{usuarioJovemBean.user.CPF}"
+						required="true" />
+					<h:message for="cpf" />
+				</p>
+				<p>
+					Endereço: <h:inputText id="endereco" value="#{usuarioJovemBean.user.endereco}"
+						required="false" />
+					<h:message for="endereco" />
+				</p>
+				<p>
+					Email do usuário: <h:inputText id="email" value="#{usuarioJovemBean.user.email}"
+						required="true" />
+					<h:message for="email" />
+				</p>
+				<p>
+					Senha: <h:inputSecret id="senha" value="#{usuarioJovemBean.user.senha}"
+					required="true">
+					</h:inputSecret>
+					<h:message for="senha" />
+				</p>
+				<p>
+					Telefone/Celular: <h:inputText id="telelfone" value="#{usuarioJovemBean.user.telefone}"
+						required="false" />
+					<h:message for="telefone" />
+				</p>
+				<p>
+					Com quem mora? <input type="text" name="" id=""></input>
+				</p>
+				<p>
+					Com quem mora? <input type="text" name="" id=""></input>
+				</p>
+				<p>
+					Tem filho? <input type="text" name="" id=""></input>
+				</p>
+				<p>
+					Sustenta alguém? <input type="text" name="" id=""></input>
+				</p>
+				<p>
+					Qual a sua escolaridade <input type="text" name="" id=""
+						placeholder="Ex: Ensino incompleto, Ensino fundamental completo, etc."
+						class="input"></input>
+				</p>
+				<p>Gênero:</p>
+				<label> <input name="group1" type="radio" /> <span>Masculino</span>
+				</label>
+				<label> <input name="group1" type="radio" /> <span>Feminino</span>
+				</label>
+				<label> <input name="group1" type="radio" /> <span>Prefiro
+						não dizer</span>
+				</label>
+
+				<p>Leia antes de marcar:</p>
+				<label> <input name="info1" type="radio" /> <span>Aceite
+						para guardar os dados</span>
+				</label>
+				<label> <input name="info2" type="radio" /> <span>Aceite
+						para compartilhar dados + histórico de curso com a empresa</span>
+				</label>
+				<label> <input name="info3" type="radio" /> <span>Comprometimento
+						com termos de uso do site</span>
+				</label>
+				<P>
+					<b:commandButton look="success" action="#{usuarioJovemBean.criarUser()}"
+						value="Cadastrar" />
+				</P>
+			</h:form> </section>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

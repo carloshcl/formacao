@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<ui:composition template="/views/layout.xhtml">
+		<ui:define name="content">
+			<section> <!-- Pesquisa de cursos(tipo) -->
+			<div>
+				<form>
+					<select class="browser-default">
+						<option value="" disabled selected>Filtro</option>
+						<option value="1">CLP</option>
+						<option value="2">PJ</option>
+						<option value="3">Freela</option>
+					</select> <input type="search" name="" id="search"
+						placeholder="Pesquisar por vaga"></input>
+					<button class="white" id="btn-search">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+			</div>
+			<!-- Informação -->
+			<div id="info">
+				<p class="flow-text">Aqui você encontra as vagas abertas nas
+					empresas parceiras para jovens da periferia em busca de se inserir
+					no mercado do trabalho</p>
+			</div>
+			<!-- Vagas --> <!-- Só pode se candidatar quem tem cadastro -->
+			<div class="row center-align vagas">
+				<p class="data-pub">xx/xx/xx</p>
+				<div class="col s4 ">
+					<span class="flow-text">Logo empresa X</span>
+				</div>
+				<div class="col s8 ">
+					<span class="flow-text">Descrição e link da empresa x</span> <a
+						class="insert" href="#">Candidatar</a>
+				</div>
+			</div>
+
+
+			<div class="row center-align vagas">
+				<p class="data-pub">xx/xx/xx</p>
+				<div class="col s4">
+					<span class="flow-text">Logo empresa Y.</span>
+				</div>
+				<div class="col s8">
+					<span class="flow-text">Descrição e link empresa Y Y</span> <a
+						class="insert" href="#">Candidatar</a>
+				</div>
+			</div>
+
+			<div class="row center-align vagas">
+				<p class="data-pub">xx/xx/xx</p>
+				<div class="col s4">
+					<span class="flow-text">Logo empresa A.</span>
+				</div>
+				<div class="col s8">
+					<span class="flow-text">Descrição e link empresa A</span> <a
+						class="insert" href="#">Candidatar </a>
+				</div>
+			</div>
+
+			</section>
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

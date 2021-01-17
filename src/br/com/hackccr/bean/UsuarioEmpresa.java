@@ -10,13 +10,14 @@ public class UsuarioEmpresa {
 	private String nome;
 	private String razaosocial;
 	private String CNPJ;
-	private Documentos documento;
-	private Endereco endereco;
-	private Contatos contato;
+	private String documento;//virar Classe
+	private String endereco; //virar Classe
+	private String contato; //virar Classe
+	private String senha;
 	private String representante;
 	private String email_representante;
 	private int qtd_funcionarios;
-	private AreaAtuacao area;
+	private String area;//virar Classe
 	private boolean ciencia_dados;
 	
 	public int getId() {
@@ -43,24 +44,7 @@ public class UsuarioEmpresa {
 	public void setCNPJ(String cNPJ) {
 		CNPJ = cNPJ;
 	}
-	public Documentos getDocumento() {
-		return documento;
-	}
-	public void setDocumento(Documentos documento) {
-		this.documento = documento;
-	}
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-	public Contatos getContato() {
-		return contato;
-	}
-	public void setContato(Contatos contato) {
-		this.contato = contato;
-	}
+	
 	public String getRepresentante() {
 		return representante;
 	}
@@ -79,17 +63,30 @@ public class UsuarioEmpresa {
 	public void setQtd_funcionarios(int qtd_funcionarios) {
 		this.qtd_funcionarios = qtd_funcionarios;
 	}
-	public AreaAtuacao getArea() {
-		return area;
-	}
-	public void setArea(AreaAtuacao area) {
-		this.area = area;
-	}
+	
 	public boolean isCiencia_dados() {
 		return ciencia_dados;
 	}
 	public void setCiencia_dados(boolean ciencia_dados) {
 		this.ciencia_dados = ciencia_dados;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	public void setContato(String contato) {
+		this.contato = contato;
+	}
+	public void setArea(String area) {
+		this.area = area;
 	}
 
 	

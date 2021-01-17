@@ -2,19 +2,20 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="./recursos/css/index.css">
-
     <meta charset="UTF-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 111</title>
-    <link rel="stylesheet" href="./recursos/css/index.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="../public/css/form.css">
+    <link rel="stylesheet" href="../public/css/entrar.css">
     <!-- FOnt Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 
 <body>
@@ -27,9 +28,9 @@
                     <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
                     <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
                     </li>
-                    <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
-                    <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
-                    <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
+                    <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
+                    <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
+                    <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
                     <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
                 </ul>
             </div>
@@ -40,26 +41,55 @@
             <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
             <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
             </li>
-            <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
-            <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
-            <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
+            <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
+            <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
+            <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
             <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
         </ul>
         </nav>
     </header>
 
+
     <section>
-        <!-- descricao -->
-        <div id="desc">
-            <h1 class="center-align"> Nome do Site </h1>
-            <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ratione vel cumque
-                illum non cupiditate exercitationem nulla enim tenetur, deserunt laudantium ullam laborum alias,
-                corporis voluptatem. Similique dolores corporis voluptates.</p>
+        <div class="row">
+            <div id="choose-user"> 
+                <p>Entrar como:</p>
+                <p>
+                    <label>
+                        <input onlick="show(1)" name="login" type="radio" id="empresa" checked />
+                        <span>Empresa</span>
+                    </label>
+                    <label>
+                        <input onlick="show(2)" name="login" type="radio" id="jovem"/>
+                        <span>Jovem</span>
+                    </label>
+                </p>
+            </div>
+
+            <div class="col s6">
+                <form id="user-empresa">
+                    <p>Email Empresa:
+                        <input type="email" name="emai-jovem" class="input">
+                    </p>
+                    <p>Senha:
+                        <input type="password" name="psw-jovem" class="input">
+                    </p>
+                    <button class="waves-effect waves-light btn-large">Entrar</button>
+                </form>
+            </div>
         </div>
-        <!-- Curos e Vagas -->
-        <div class="row" id="cursoVaga">
-            <div class="col s6 green" id="curso"><span class="flow-text">Principais Cursos</span></div>
-            <div class="col s6 green" id="vaga"><span class="flow-text">Principais Vagas</span></div>
+        <div class="row">
+            <div class="col s6">
+                <form id="user-jovem">
+                    <p>Email Jovem:
+                        <input type="email" name="emai-jovem" class="input">
+                    </p>
+                    <p>Senha:
+                        <input type="password" name="psw-jovem" class="input">
+                    </p>
+                    <button class="waves-effect waves-light btn-large">Entrar</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -97,6 +127,7 @@
             $('.sidenav').sidenav();
         });
     </script>
+    <script src="../public/js/entrar.js"></script>
 </body>
 
 </html>

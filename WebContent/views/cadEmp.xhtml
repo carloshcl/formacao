@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<h:head></h:head>
+<body>
+	<ui:composition template="/views/layout.xhtml">
+		<ui:define name="content">
+			<section>
+			<div id="desc">
+				<h1 class="center-align">Nome do Site</h1>
+				<p class="flow-text center-align">Vem fazer parte desse
+					movimento!</p>
+			</div>
+			<!-- formulario -->
+			<h:form>
+				<p>
+					Razão Social: <h:inputText id="razao" value="#{empresaBean.user.razaosocial}"
+						required="true" />
+					<h:message for="razao" />
+				</p>
+				<p>
+					Nome Fantasia: <h:inputText id="nome" value="#{empresaBean.user.nome}"
+						required="true" />
+					<h:message for="nome" />
+				</p>
+				<p>
+					CNPJ: <h:inputText id="cnpj" value="#{empresaBean.user.CNPJ}"
+						required="true" />
+					<h:message for="cnpj" />
+				</p>
+				<p>
+					Endereço: <input type="text" name="Endereço"></input>
+				</p>
+				<p>
+					Email da Empresa: <h:inputText id="email" value="#{empresaBean.user.email_representante}"
+						required="true" />
+					<h:message for="email" />
+				</p>
+				<p>
+					Senha: <h:inputSecret id="senha" value="#{empresaBean.user.senha}"
+					required="true">
+					</h:inputSecret>
+					<h:message for="senha" />
+				</p>
+				<p>
+					Telefone/Celular: <input type="text" name="TelCel" class="input"></input>
+				</p>
+				<p>
+					Site: <input type="text" name="Site"></input>
+				</p>
+				<p>
+					Número de Funcionarios: <input type="text" name="NumFunc"
+						class="input"></input>
+				</p>
+				<p>
+					Área de atuação: <input type="text" name="AreaAtua" id=""
+						class="input"
+						placeholder="ex: Industria, Varejo, Saúde, Educação, Etc."></input>
+				</p>
+				<p>
+					<label> <input type="checkbox" /> <span>Aceite para
+							guardar os dados</span>
+					</label>
+				</p>
+				<p>
+					<label> <input type="checkbox" /> <span>Aceite para
+							compartilhar dados</span>
+					</label>
+				</p>
+				<p>
+					<label> <input type="checkbox" /> <span>Comprometimento
+							com termos de uso do site</span>
+					</label>
+				</p>
+				<P>
+					<b:commandButton look="success" action="#{empresaBean.criarUser()}"
+						value="Cadastrar" />
+				</P>
+			</h:form>
+			</section>
+			
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

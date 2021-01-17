@@ -4,22 +4,25 @@ import java.util.Date;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-@ManagedBean
-@SessionScoped
+
 public class UsuarioJovem {
+
 	private int id;
 	private String nome;
-	private Endereco endereco;
-	private Contatos contato;
+	private String CPF;
+	private String endereco;
+	private String email;
+	private String senha;
+	private String telefone;	
 	private String escolaridade;
-	private PerfilSocioEconomico socioeconomico;
+	private String socioeconomico;
 	private String raca;
 	private Date datanasc;
 	private int idade;
 	private String genero;
 	private String pne;
 	private boolean ciencia_dados;
-
+	
 	public int getId() {
 		return id;
 	}
@@ -39,24 +42,52 @@ public class UsuarioJovem {
 		this.nome = nome;
 	}
 
+	public String getCPF() {
+		return CPF;
+	}
 
-	public Endereco getEndereco() {
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getEndereco() {
 		return endereco;
 	}
 
 
-	public void setEndereco(Endereco endereco) {
+	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 
 
-	public Contatos getContato() {
-		return contato;
+	public String getEmail() {
+		return email;
 	}
 
 
-	public void setContato(Contatos contato) {
-		this.contato = contato;
+	public void setEmail(String Email) {
+		this.email = Email;
+	}
+
+
+	public String getSenha() {
+		return senha;
+	}
+
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
 	}
 
 
@@ -70,12 +101,12 @@ public class UsuarioJovem {
 	}
 
 
-	public PerfilSocioEconomico getSocioeconomico() {
+	public String getSocioeconomico() {
 		return socioeconomico;
 	}
 
 
-	public void setSocioeconomico(PerfilSocioEconomico socioeconomico) {
+	public void setSocioeconomico(String socioeconomico) {
 		this.socioeconomico = socioeconomico;
 	}
 

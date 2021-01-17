@@ -1,0 +1,16 @@
+/* Se */
+section form{
+    margin-left:80%;
+    margin-top:100px;
+}
+#choose-user{
+    margin-left:40%;
+    margin-top:50px;
+}
+
+#user-jovem{
+    visibility: hidden;
+    margin-top:-290px;
+}
+
+

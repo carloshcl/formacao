@@ -1,4 +1,3 @@
-/* Pesquisa cursos */
 section{
     padding:10px;
 }
@@ -23,9 +22,7 @@ form{
 form select{
     
 }
-#search{
-    
-}
+
 div form label{
     font-weight: bold;
     color:black;
@@ -34,15 +31,19 @@ div form label{
 #info{
     margin-top:45px;
 }
-.cursos{
+.vagas{
     width:80%;
     margin-top:50px;
     background-color:rgb(57, 57, 255);
     padding:10px;
 }
 
-.inscreve{
+.insert{
     color:#fff;
     float:right;
 }
-
+.data-pub{
+    margin-left:10px;
+    color:#fff;
+    font-size:1.3em
+}

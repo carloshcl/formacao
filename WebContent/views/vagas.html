@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 111</title>
     <!-- Links -->
-    <link rel="stylesheet" href="./recursos/css/about.css">
-    <link rel="stylesheet" href="./recursos/css/index.css">
-    <!-- FOnt Awesome -->
+    <link rel="stylesheet" href="../public/css/vagas.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
@@ -27,9 +26,9 @@
                     <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
                     <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
                     </li>
-                    <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
-                    <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
-                    <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
+                    <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
+                    <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
+                    <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
                     <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
                 </ul>
             </div>
@@ -40,32 +39,60 @@
             <li><a href="quemSomos.html"> <i class="fas fa-users"></i> Quem Somos</a></li>
             <li><a href="cadEmp.html"> <i class="fas fa-business-time"></i> Ser uma empresa parceira</a>
             </li>
-            <li><a href=""> <i class="fas fa-search-dollar"></i> Ver Vagas</a></li>
-            <li><a href="#"> <i class="fas fa-book-reader"></i> Ver Cursos</a></li>
-            <li><a href="#"> <i class="fas fa-sign-in-alt"></i> Entrar</a></li>
-            <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar</a></li>
+            <li><a href="vagas.html"> <i class="fas fa-search-dollar"></i> Ver Vagas </a></li>
+            <li><a href="cursos.html"> <i class="fas fa-book-reader"></i> Ver Cursos </a></li>
+            <li><a href="entrar.html"> <i class="fas fa-sign-in-alt"></i> Entrar </a></li>
+            <li><a href="cadJovem.html"> <i class="fas fa-user-plus"></i> Quero me Cadastrar </a></li>
         </ul>
         </nav>
     </header>
 
     <section>
-        <!-- descricao -->
-        <div id="desc">
-            <h1 class="center-align">Nome do Site</h1>
-            <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ratione vel cumque
-                illum non cupiditate exercitationem nulla enim tenetur, deserunt laudantium ullam laborum alias,
-                corporis voluptatem. Similique dolores corporis voluptates.</p>
-        </div>
-        <!-- Historia do site -->
+        <!-- Pesquisa de cursos(tipo) -->
         <div>
-            <h1 class="center-align">Nossa Historia</h1>
-            <p class="flow-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptate
-                corporis neque in delectus error corrupti ab aspernatur, amet odit, ut maxime sapiente, sunt hic atque
-                recusandae explicabo? Similique, illum!</p>
-            <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nobis iusto alias ipsa,
-                ipsam repellendus veritatis non qui reprehenderit, officiis, pariatur natus adipisci impedit laborum
-                voluptates atque nihil. Velit, saepe.</p>
+            <form>
+                <select class="browser-default">
+                    <option value="" disabled selected>Filtro</option>
+                    <option value="1">CLP</option>
+                    <option value="2">PJ</option>
+                    <option value="3">Freela</option>
+                </select>
+                </i> <input type="search" name="" id="search" placeholder="Pesquisar por vaga">
+                <button class="white" id="btn-search"><i class="fas fa-search"></i></button>
+            </form>
         </div>
+        <!-- Informação -->
+        <div id="info">
+            <p class="flow-text">Aqui você encontra as vagas abertas nas empresas parceiras para jovens da periferia em
+                busca de se inserir no mercado do trabalho</p>
+        </div>
+        <!-- Vagas -->
+        <!-- Só pode se candidatar quem tem cadastro -->
+        <div class="row center-align vagas">
+            <p class="data-pub">xx/xx/xx</p>
+            <div class="col s4 "><span class="flow-text">Logo empresa X</span></div>
+            <div class="col s8 "><span class="flow-text">Descrição e link da empresa x</span>
+                <a class="insert" href="#">Candidatar</a>
+            </div>
+        </div>
+
+            
+        <div class="row center-align vagas">
+            <p class="data-pub">xx/xx/xx</p>
+            <div class="col s4"><span class="flow-text">Logo empresa Y.</span></div>
+            <div class="col s8"><span class="flow-text">Descrição e link empresa Y Y</span>
+                <a class="insert" href="#">Candidatar</a>
+            </div>
+        </div>
+
+        <div class="row center-align vagas">
+            <p class="data-pub">xx/xx/xx</p>
+            <div class="col s4"><span class="flow-text">Logo empresa A.</span></div>
+            <div class="col s8"><span class="flow-text">Descrição e link empresa A</span>
+                <a class="insert" href="#">Candidatar </a>
+            </div>
+        </div>
+
     </section>
 
     <footer class="page-footer blue">
@@ -87,6 +114,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
